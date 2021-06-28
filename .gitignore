@@ -1,0 +1,13 @@
+db
+old
+www/wp-admin
+www/wp-includes
+www/*.php
+www/.htaccess
+www/license.txt
+www/readme.html
+www/wp-content/languages
+www/wp-content/plugins
+www/wp-content/uploads
+www/wp-content/*.php
+www/wp-content/themes/index.php
