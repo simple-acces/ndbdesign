@@ -14,8 +14,8 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 ?>
 
 <header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
-
+	<div class="content-area">
 	<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 	<?php get_template_part( 'template-parts/header/site-nav' ); ?>
-
+	</div>
 </header><!-- #masthead -->

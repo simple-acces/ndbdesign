@@ -11,10 +11,10 @@
 
 get_header();
 
-if (is_home()) :
+if ( is_front_page() ) :
 	while ( have_posts() ) :
 		the_post();
-		get_template_part( 'template-parts/content/content-page' );
+		get_template_part( 'template-parts/content/content-front-page' );
 	endwhile; 
 endif;
 
