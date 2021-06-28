@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - name: test
-        run: echo "${{ secrets.VPS_NDBDESIGN_HOST }}"
+        run: echo "${{ secrets.TOTO }}"
       - name: deploy to vps ndbdesign
-        uses: easingthemes/ssh-deploy@v2.1.4
+        uses: easingthemes/ssh-deploy@v2.2.11
         env:
           SSH_PRIVATE_KEY: ${{ secrets.VPS_NDBDESIGN_SSHKEY }}
           REMOTE_HOST: ${{ secrets.VPS_NDBDESIGN_HOST }}
