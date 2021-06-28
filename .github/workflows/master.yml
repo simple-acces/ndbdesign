@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-16.04
 
     steps:
+      - name: test
+        run: echo "${{ secrets.VPS_NDBDESIGN_HOST }}"
       - name: deploy to vps ndbdesign
         uses: easingthemes/ssh-deploy@v2.1.4
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.vps_ndbdesign_sshkey }}
-          REMOTE_HOST: ${{ secrets.vps_ndbdesign_host }}
-          REMOTE_USER: ${{ secrets.vps_ndbdesign_login }}
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_NDBDESIGN_SSHKEY }}
+          REMOTE_HOST: ${{ secrets.VPS_NDBDESIGN_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_NDBDESIGN_LOGIN }}
           SOURCE: "www/wp-content/themes/ndbdesign"
           TARGET: "/var/www/wordpress/wp-content/themes/ndbdesign"
