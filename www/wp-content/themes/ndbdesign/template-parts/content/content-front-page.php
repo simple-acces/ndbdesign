@@ -22,7 +22,8 @@
 <?php 
 
 $pages = get_pages(array(
-	"child_of" => $post->ID
+	"child_of" => $post->ID,
+	"sort_column" => "menu_order"
 ));
 
 foreach( $pages as $page ) {      
