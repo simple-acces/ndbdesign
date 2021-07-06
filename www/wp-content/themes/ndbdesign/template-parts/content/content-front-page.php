@@ -29,8 +29,9 @@ foreach( $pages as $page ) {
 ?>
 <article>
     <h1><?php echo $page->post_title ?></h1>
+
     <?php 
-	if ($page->post_name == "nos-realisations") {
+	if ($page->ID == 95) {
 		get_template_part('pages/realisations');
 	} else {
 		the_content();
