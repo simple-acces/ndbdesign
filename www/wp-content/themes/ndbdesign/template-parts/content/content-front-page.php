@@ -31,7 +31,7 @@ foreach( $pages as $page ) {
     <h1><?php echo $page->post_title ?></h1>
 
     <?php 
-	if ($page->ID == 95) {
+	if ($page->ID == 95 || $page->ID == 143) {
 		get_template_part('pages/realisations');
 	} else {
 		the_content();
