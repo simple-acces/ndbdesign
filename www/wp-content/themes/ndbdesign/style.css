@@ -392,6 +392,12 @@ body {
   color: #7a726c;
 }
 
+h1 {
+  text-align: center;
+  margin: 0 auto 50px auto;
+  font-weight: 300;
+}
+
 .site-content > article {
   padding: 50px 0;
 }
@@ -488,4 +494,107 @@ body {
 
 .home-description .content-area .description p {
   text-align: center;
+}
+
+/*******
+
+	NOS PRESATIONS
+
+*****/
+
+body.home > #page > #content > article:nth-child(3) {
+  padding: 50px 0 0 0;
+}
+
+/*******
+
+	NOS SOLUTIONS
+
+*****/
+
+body.home > #page > #content > article:nth-child(4) {
+  background-color: #f2f2f2;
+}
+
+body.home > #page > #content > article:nth-child(4) > div {
+  max-width: 1260px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 20px auto;
+}
+
+body.home
+  > #page
+  > #content
+  > article:nth-child(4)
+  > div:not(.active)
+  > .woocommerce {
+  display: none;
+}
+
+body.home > #page > #content > article:nth-child(4) > div > .woocommerce {
+  margin-top: 20px;
+}
+
+body.home
+  > #page
+  > #content
+  > article:nth-child(4)
+  > div
+  > .woocommerce
+  .product {
+  margin: 0 2.8% 0 0;
+}
+
+/*******
+
+	TESTIMONIAL
+
+*****/
+
+body.home > #page > #content > article:nth-child(5) {
+  background: #a4b5af;
+  color: white;
+}
+
+body.home > #page > #content > article:nth-child(5) > div {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/*******
+
+	WOOCOMMERCE
+
+*****/
+
+.woocommerce {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.woocommerce ul.products li.product {
+  text-align: center;
+}
+
+.woocommerce ul.products li.product a img {
+  margin: auto;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  color: #7a726c;
+  font-weight: 300;
+  padding: 1em 0 0.4em 0;
+}
+
+.woocommerce ul.products li.product .price {
+  color: #7a726c;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.woocommerce ul.products li.product_cat-prestations img {
+  max-width: 300px !important;
+  max-height: 300px;
 }
