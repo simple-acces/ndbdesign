@@ -20,10 +20,12 @@ if (!is_front_page()) {
             setup_postdata( $post );
         ?>
     <div class="element realisation">
-        <img src="<?php the_post_thumbnail_url("full") ?>" />
+        <div class="img" style="background-image:url(<?php the_post_thumbnail_url("full") ?>)"></div>
+        <div>
         <?php
             the_title();
         ?>
+        </div>
     </div>
     <?php
         endforeach; 
@@ -32,7 +34,7 @@ if (!is_front_page()) {
     ?>
 </div>
 <?php if (is_front_page()): ?>
-<a href="/accueil/nos-realisations/"><button>VOIR PLUS</button></a>
+<a class="seeall" href="/accueil/nos-realisations/"><button>VOIR TOUT</button></a>
 <?php endif;
 
 if (!is_front_page()) {
