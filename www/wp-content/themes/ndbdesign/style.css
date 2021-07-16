@@ -691,7 +691,7 @@ body.home > #page > #content > article:nth-child(10) p {
   margin: 0;
 }
 
-.woocommerce ul.products li.product {
+.woocommerce.columns-4 ul.products li.product {
   margin-bottom: 0;
 }
 

@@ -48,6 +48,7 @@
 				<?php endif; ?>
 			</div><!-- .site-name -->
 		</div><!-- .site-info -->
+		<div class="socials">insta</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
