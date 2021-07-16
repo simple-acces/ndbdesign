@@ -637,6 +637,21 @@ body.home > #page > #content > article:nth-child(8) {
 
 /*******
 
+	PARUTIONS
+
+*****/
+
+body.home > #page > #content > article:nth-child(10) p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*******
+
 	WOOCOMMERCE
 
 *****/
@@ -693,4 +708,17 @@ body.home
 
 body.home .woocommerce-loop-category__title .count {
   display: none;
+}
+
+/*******
+
+	FOOTER
+
+*****/
+
+.site-footer {
+  height: 65px;
+  background: #a4b5af;
+  display: flex;
+  justify-content: space-between;
 }
