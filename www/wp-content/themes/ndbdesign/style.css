@@ -717,8 +717,51 @@ body.home .woocommerce-loop-category__title .count {
 *****/
 
 .site-footer {
-  height: 65px;
+  height: 40px;
   background: #a4b5af;
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+  padding-top: 25px;
+  color: white;
+}
+
+.site-footer > * {
+  width: 30%;
+}
+
+.site-footer > *:nth-child(2) {
+  text-align: center;
+}
+
+.site-footer > *:nth-child(3) {
+  text-align: right;
+}
+
+.footer-navigation-wrapper {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation-wrapper .menu-item {
+  margin-left: 10px;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
+}
+
+.site-footer .socials {
+  font-size: 18px;
+}
+
+.site-footer .socials i {
+  margin-right: 10px;
 }

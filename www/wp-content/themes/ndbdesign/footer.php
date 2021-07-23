@@ -39,16 +39,14 @@
 		<?php endif; ?>
 		<div class="site-info">
 			<div class="site-name">
-				<?php if ( get_bloginfo( 'name' ) && get_theme_mod( 'display_title_and_tagline', true ) ) : ?>
-					<?php if ( is_front_page() && ! is_paged() ) : ?>
-						<?php bloginfo( 'name' ); ?>
-					<?php else : ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-					<?php endif; ?>
-				<?php endif; ?>
+			© NDB Design - Tél: +33 6 61 74 50 55 - <a href="mailto:contact@ndbdesign.fr">contact@ndbdesign.fr</a>
 			</div><!-- .site-name -->
 		</div><!-- .site-info -->
-		<div class="socials">insta</div>
+		<div class="socials">
+			<a href="#"><i class="fab fa-pinterest-p"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
