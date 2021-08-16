@@ -437,6 +437,14 @@ function twenty_twenty_one_scripts() {
 		);
 	}
 
+	wp_enqueue_script(
+		'main',
+		get_template_directory_uri() . '/assets/js/main.js',
+		array( 'twenty-twenty-one-ie11-polyfills' ),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+
 	// Responsive embeds script.
 	wp_enqueue_script(
 		'twenty-twenty-one-responsive-embeds-script',

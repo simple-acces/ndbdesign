@@ -5,5 +5,5 @@
 ?>
 
 <?php if ( has_custom_logo() ) : ?>
-	<div class="site-logo"><?php the_custom_logo(); ?></div>
+	<div class="site-logo"><?php the_custom_logo(); ?><div>Nadège Di Bernardo<br>Designer d'intérieur</div></div>
 <?php endif; ?>
