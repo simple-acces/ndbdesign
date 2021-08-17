@@ -383,6 +383,12 @@ template {
 
 *****/
 
+@font-face {
+  font-family: "Capsuula";
+  src: url("/wp-content/themes/ndbdesign/assets/fonts/capsuula.ttf")
+    format("truetype");
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -394,6 +400,7 @@ h1 {
   text-align: center;
   margin: 0 auto 50px auto;
   font-weight: 300;
+  font-family: "Capsuula";
 }
 
 .site-content > article {
@@ -465,11 +472,11 @@ h1 {
 }
 
 .site-logo > div {
-  font-size: 12px;
+  font-family: "Capsuula";
+  font-size: 16px;
   margin-top: 13px;
   margin-left: 12px;
   text-align: center;
-  line-height: 1.5em;
 }
 
 .menu-button-container {

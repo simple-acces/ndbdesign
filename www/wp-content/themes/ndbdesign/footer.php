@@ -43,9 +43,9 @@
 			</div><!-- .site-name -->
 		</div><!-- .site-info -->
 		<div class="socials">
-			<a href="#"><i class="fab fa-pinterest-p"></i></a>
-			<a href="#"><i class="fab fa-linkedin-in"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.pinterest.fr/pin/666040232363255934/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+			<a href="https://www.linkedin.com/in/nad%C3%A8ge-di-bernardo-31b6b335?originalSubdomain=fr" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.instagram.com/ndbdesignparis/" target="_blank"><i class="fab fa-instagram"></i></a>
 		</div>
 	</footer><!-- #colophon -->
 
