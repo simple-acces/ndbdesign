@@ -394,6 +394,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   color: #7a726c;
+  padding-top: 75px;
 }
 
 h1 {
@@ -455,10 +456,18 @@ h1 {
 
 *****/
 
+header#masthead {
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  z-index: 10;
+}
+
 #masthead .content-area {
   display: flex;
   height: 60px;
-  margin: 35px auto 0 auto;
+  margin: 35px auto 35px auto;
   justify-content: space-between;
 }
 
