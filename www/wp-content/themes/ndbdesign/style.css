@@ -394,6 +394,10 @@ body {
   font-weight: 300;
   font-size: 18px;
   color: #7a726c;
+  padding-top: 130px;
+}
+
+body.home {
   padding-top: 75px;
 }
 
@@ -448,6 +452,10 @@ h1 {
 
 .seeall button:hover {
   opacity: 0.9;
+}
+
+.grey {
+  background: #f2f2f2;
 }
 
 /*******
@@ -563,7 +571,7 @@ body.home > #page > #content > article:nth-child(4) {
   background-color: #f2f2f2;
 }
 
-body.home > #page > #content > article:nth-child(4) > div {
+.slide {
   max-width: 1260px;
   background: white;
   border-radius: 20px;
@@ -571,26 +579,15 @@ body.home > #page > #content > article:nth-child(4) > div {
   margin: 20px auto;
 }
 
-body.home
-  > #page
-  > #content
-  > article:nth-child(4)
-  > div:not(.active)
-  > .woocommerce {
+.slide:not(.active) > .woocommerce {
   display: none;
 }
 
-body.home > #page > #content > article:nth-child(4) > div > .woocommerce {
+.slide > .woocommerce {
   margin-top: 20px;
 }
 
-body.home
-  > #page
-  > #content
-  > article:nth-child(4)
-  > div
-  > .woocommerce
-  .product {
+.slide > .woocommerce .product {
   margin: 0 2.8% 0 0;
 }
 
@@ -738,6 +735,30 @@ body.home
 
 body.home .woocommerce-loop-category__title .count {
   display: none;
+}
+
+/*******
+
+	PAGE PRESATION (BESOIN/SOLUTION)
+
+*****/
+
+.prestations h1 {
+  margin: 50px auto 0 auto;
+}
+
+.prestations > p {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.prestations .grey {
+  padding: 50px;
+}
+
+.prestations .slide {
+  max-width: 1000px;
 }
 
 /*******
