@@ -4,33 +4,17 @@
  */
 
 get_header();
-?> 
-<div class="prestations">
-<?php
+
     while ( have_posts() ) :
         the_post();
         the_title("<h1>", "</h1>");
         ?>
         <p>
-        L’année 2020, marquée par la nécessité de rester chez soi,
-a fait émerger de profonds désirs de changements.
-
-NDB Design vous invite à réinventer votre intérieur.
-
-Une large gamme de prestations en architecture & décoration d’intérieur ainsi qu’une sélection de luminaires & de mobilier vous sont proposés.
-
-Contactez-nous, nous vous aiderons à concrétiser votre projet
-<br /><br />
-L’année 2020, marquée par la nécessité de rester chez soi,
-a fait émerger de profonds désirs de changements.
-
-NDB Design vous invite à réinventer votre intérieur.
-
-Une large gamme de prestations en architecture & décoration d’intérieur ainsi qu’une sélection de luminaires & de mobilier vous sont proposés.
-
-Contactez-nous, nous vous aiderons à concrétiser votre projet
+        Vous souhaitez transformer votre intérieur mais vous ne savez pas quelle prestation choisir? Dans notre rubrique interactive, Votre besoin, notre solution d'accompagnement, laissez-vous guider : cliquez sur ce que vous recherchez; une ou des solutions d'accompagnement vous seront proposées pour obtenir un diagnostic, des conseils en architecture d'intérieur, en décoration ou sur la meilleure façon de concrétiser votre projet d'aménagement d'espace.
+        <br /><br />
+        Vous ne trouvez pas la solution adaptée à votre besoin? Vous avez un doute sur la meilleure formule? Contactez-nous par téléphone ou par mail et nous envisagerons ensemble la prestation la plus appropriée à ce que vous souhaitez ainsi qu'à votre budget.
         <p>
-        <div class="grey">
+        <div class="prestations grey">
         <?php
             the_content();
         ?>
@@ -38,9 +22,5 @@ Contactez-nous, nous vous aiderons à concrétiser votre projet
             
         <?php
     endwhile; 
-
-?> 
-</div>
-<?php
 
 get_footer();

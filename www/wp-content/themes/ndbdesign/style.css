@@ -458,6 +458,20 @@ h1 {
   background: #f2f2f2;
 }
 
+body:not(.home) h1 {
+  margin: 50px auto;
+}
+
+body:not(.home) #content > p {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+body:not(.home) #content > .grey {
+  padding: 50px;
+}
+
 /*******
 
 	HEADER
@@ -617,6 +631,11 @@ body.home > #page > #content > article:nth-child(5) > div {
 
 *****/
 
+.grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .grid.realisations {
   max-width: 1300px;
   margin: auto;
@@ -626,6 +645,7 @@ body.home > #page > #content > article:nth-child(5) > div {
 
 .grid.realisations .realisation {
   padding: 0 20px;
+  height: 100%;
 }
 
 .grid.realisations .realisation div {
@@ -640,6 +660,19 @@ body.home > #page > #content > article:nth-child(5) > div {
   margin: 0 auto 25px auto;
   background-size: cover;
   background-position: center;
+}
+
+body:not(.home) .grid.realisations .realisation .img {
+  height: 350px;
+}
+
+body:not(.home) .grid.realisations .realisation {
+  padding: 0 20px;
+  margin: 20px 0 30px 0;
+}
+
+body:not(.home) .grid.realisations {
+  grid-template-rows: auto;
 }
 
 /*******
@@ -742,20 +775,6 @@ body.home .woocommerce-loop-category__title .count {
 	PAGE PRESATION (BESOIN/SOLUTION)
 
 *****/
-
-.prestations h1 {
-  margin: 50px auto 0 auto;
-}
-
-.prestations > p {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.prestations .grey {
-  padding: 50px;
-}
 
 .prestations .slide {
   max-width: 1000px;
