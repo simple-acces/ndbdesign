@@ -28,13 +28,20 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
+		remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+			<?php 
+			$cat = get_the_terms( $post->ID, 'product_cat' )[0]->slug;
+			if ($cat == 'prestations') 
+				wc_get_template_part( 'content', 'single-product-prestations' );
+			else
+				wc_get_template_part( 'content', 'single-product' ); 
+			?>
 
 		<?php endwhile; // end of the loop. ?>
 
@@ -53,7 +60,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action( 'woocommerce_sidebar' );
+		//do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php

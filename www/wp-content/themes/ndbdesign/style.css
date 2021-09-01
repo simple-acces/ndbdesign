@@ -505,9 +505,9 @@ header#masthead {
 .site-logo > div {
   font-family: "Capsuula";
   font-size: 16px;
-  margin-top: 13px;
+  margin-top: 3px;
   margin-left: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 .menu-button-container {
@@ -716,7 +716,7 @@ body.home > #page > #content > article:nth-child(10) p {
 
 *****/
 
-.woocommerce {
+.woocommerce:not(body) {
   max-width: 1300px;
   margin: auto;
 }
