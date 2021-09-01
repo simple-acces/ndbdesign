@@ -9,6 +9,7 @@ get_header();
         the_post();
         ?>
         <div class="prestations grey">
+        <h1>Nos prestations en Architecture d'intérieur & décoration</h1>
         <?php
             the_content();
         ?>

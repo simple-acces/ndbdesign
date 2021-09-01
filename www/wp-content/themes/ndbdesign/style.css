@@ -466,10 +466,11 @@ body:not(.home) #content > p {
   max-width: 800px;
   margin: 0 auto 50px auto;
   text-align: center;
+  line-height: 1.5em;
 }
 
 body:not(.home) #content > .grey {
-  padding: 50px;
+  padding: 1px 50px 50px 50px;
 }
 
 /*******
@@ -560,6 +561,7 @@ header#masthead {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1.5em;
 }
 
 .home-description .content-area .description p {
@@ -834,4 +836,58 @@ body.home .woocommerce-loop-category__title .count {
 
 .site-footer .socials i {
   margin-right: 10px;
+}
+
+/**
+  * PAGE SINGLE PRESTATION
+  *
+*/
+
+#single-prestation {
+  line-height: 1.5em;
+}
+
+#single-prestation > img {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 300px !important;
+}
+
+#single-prestation > p:last-of-type {
+  clear: both;
+}
+
+#single-prestation h2 {
+  font-weight: 300;
+  font-family: "Capsuula";
+}
+
+#single-prestation .boxes {
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+  margin: 50px 0;
+}
+
+#single-prestation .boxes .box {
+  width: 100%;
+  margin-right: 2%;
+  height: 160px;
+  box-shadow: 0px 0px 20px -3px #d9d9d9;
+  font-size: 14px;
+  padding: 2% 0;
+}
+
+#single-prestation .boxes .box:last-of-type {
+  margin-right: 0;
+}
+
+#single-prestation .boxes .box .title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 73%;
+  margin: auto;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 5px;
 }
