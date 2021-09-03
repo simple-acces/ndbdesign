@@ -489,24 +489,29 @@ header#masthead {
 
 #masthead .content-area {
   display: flex;
-  height: 60px;
-  margin: 35px auto 35px auto;
+  height: 75px;
+  margin: 28px auto 28px auto;
   justify-content: space-between;
 }
 
 .site-logo {
   display: flex;
+  align-items: center;
+}
+
+.custom-logo-link {
+  width: 38px;
 }
 
 .site-logo img {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 .site-logo > div {
   font-family: "Capsuula";
   font-size: 16px;
-  margin-top: 3px;
+  margin-top: -1px;
   margin-left: 12px;
   text-align: left;
 }
@@ -849,7 +854,7 @@ body.home .woocommerce-loop-category__title .count {
 
 #single-prestation > img {
   float: left;
-  margin: 0 20px 20px 0;
+  margin: 0 35px 35px 0;
   max-width: 300px !important;
 }
 
