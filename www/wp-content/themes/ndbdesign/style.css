@@ -896,3 +896,71 @@ body.home .woocommerce-loop-category__title .count {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 5px;
 }
+
+/**
+  * PAGE POST SINGLE
+*/
+
+#content > article.post {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#content > article.post h2,
+#content > article.post h3 {
+  font-family: "Capsuula";
+  font-weight: 300;
+}
+
+.slider-grid {
+  display: flex;
+}
+
+.slider-grid .element {
+  width: 100%;
+}
+
+.slider-grid .element h3 {
+  text-align: center;
+}
+
+button.meta-nav {
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #a4b5af;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+button.meta-nav:hover {
+  opacity: 0.8;
+}
+
+.nav-previous button.meta-nav svg {
+  margin: 0 5px 0 0;
+}
+
+.nav-next button.meta-nav svg {
+  margin: 0 0 0 5px;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.post-navigation {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+}
