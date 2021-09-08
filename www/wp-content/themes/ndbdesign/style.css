@@ -964,3 +964,10 @@ nav.post-navigation {
   width: 100%;
   max-width: 1200px;
 }
+
+.sp-arrows .sp-previous-arrow::after,
+.sp-arrows .sp-previous-arrow::before,
+.sp-arrows .sp-next-arrow::after,
+.sp-arrows .sp-next-arrow::before {
+  background-color: #a4b5af !important;
+}
