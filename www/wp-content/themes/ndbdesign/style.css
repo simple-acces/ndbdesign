@@ -937,10 +937,11 @@ body.home .woocommerce-loop-category__title .count {
 
 .slider-grid {
   display: flex;
+  justify-content: space-between;
 }
 
 .slider-grid .element {
-  width: 100%;
+  width: fit-content;
 }
 
 .slider-grid .element h3 {
