@@ -477,8 +477,14 @@ body:not(.home) #content > .grey {
   min-height: calc(100vh - 196px);
 }
 
+.product-template-default a,
 .page-template-default a {
-  color: black;
+  color: #a3b4ae;
+}
+
+.product-template-default a:hover,
+.page-template-default a:hover {
+  color: #8da39f;
 }
 
 /*******
@@ -543,7 +549,7 @@ header#masthead {
 }
 
 .primary-menu-container a:hover {
-  color: black;
+  color: #a3b4ae;
 }
 
 #site-navigation {
@@ -554,7 +560,7 @@ header#masthead {
 .primary-menu-container ul.sub-menu {
   display: none;
   position: absolute;
-  width: 250px;
+  width: max-content;
   padding: 0;
   margin: 0;
   top: -5px;
@@ -767,6 +773,8 @@ body.home > #page > #content > article:nth-child(10) p {
   color: #7a726c;
   font-weight: 300;
   padding: 1em 0 0.4em 0;
+  line-height: 1.3em;
+  font-size: 15px;
 }
 
 .woocommerce ul.products li.product .price {
@@ -860,6 +868,7 @@ body.home .woocommerce-loop-category__title .count {
 
 .site-footer a:hover {
   opacity: 0.7;
+  color: white;
 }
 
 .site-footer .socials {

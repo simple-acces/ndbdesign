@@ -12,7 +12,7 @@ switch (location.pathname) {
     menuButtons.forEach((a) => {
       const sub = a.parentElement.querySelector("ul.sub-menu");
       a.addEventListener("mouseenter", () => {
-        a.style.color = "black";
+        a.style.color = "#a3b4ae";
         sub.style.display = "block";
       });
       sub.addEventListener("mouseleave", () => {
