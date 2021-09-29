@@ -1023,3 +1023,62 @@ body:not(.home).page-id-369 #content > p {
   font-family: "Capsuula";
   font-weight: 300;
 }
+
+/**
+  * PAGE CONTACT
+**/
+
+div.wpforms-container-full.wpforms-container {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  margin-bottom: 45px;
+}
+
+form.wpforms-form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-weight: 300;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+  font-weight: 300;
+}
+
+div.wpforms-container-full .wpforms-form input[type="date"],
+div.wpforms-container-full .wpforms-form input[type="datetime"],
+div.wpforms-container-full .wpforms-form input[type="datetime-local"],
+div.wpforms-container-full .wpforms-form input[type="email"],
+div.wpforms-container-full .wpforms-form input[type="month"],
+div.wpforms-container-full .wpforms-form input[type="number"],
+div.wpforms-container-full .wpforms-form input[type="password"],
+div.wpforms-container-full .wpforms-form input[type="range"],
+div.wpforms-container-full .wpforms-form input[type="search"],
+div.wpforms-container-full .wpforms-form input[type="tel"],
+div.wpforms-container-full .wpforms-form input[type="text"],
+div.wpforms-container-full .wpforms-form input[type="time"],
+div.wpforms-container-full .wpforms-form input[type="url"],
+div.wpforms-container-full .wpforms-form input[type="week"],
+div.wpforms-container-full .wpforms-form select,
+div.wpforms-container-full .wpforms-form textarea {
+  border-radius: 5px;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"].wpforms-submit {
+  width: 15%;
+  background: #a4b5af;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.wpforms-confirmation-container-full {
+  max-width: 1000px;
+  background: none;
+  border: none;
+  text-align: center;
+}
