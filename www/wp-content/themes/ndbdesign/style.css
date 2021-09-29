@@ -477,6 +477,10 @@ body:not(.home) #content > .grey {
   min-height: calc(100vh - 196px);
 }
 
+.page-template-default a {
+  color: black;
+}
+
 /*******
 
 	HEADER
