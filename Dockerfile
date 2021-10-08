@@ -3,7 +3,7 @@ FROM debian:stable
 RUN apt-get update && apt-get install -y apache2 php mariadb-server php-mysql php-curl php-simplexml php-mbstring
 
 COPY run.sh /var/
-COPY db/ndbdesign-2021-09-29 /var/dump_db
+COPY db/ndbdesign-2021-10-08 /var/dump_db
 COPY ./www/ /var/www/html
 COPY apache2.conf /etc/apache2/
 
