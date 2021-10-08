@@ -814,6 +814,19 @@ body.home .woocommerce-loop-category__title .count {
   display: none;
 }
 
+body.woocommerce-shop #main {
+  padding-bottom: 50px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a {
+  background: #a4b5af;
+  color: white;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+  background: #a4b5af94;
+}
+
 /*******
 
 	PAGE PRESATION (BESOIN/SOLUTION)
@@ -1096,4 +1109,12 @@ div.wpforms-container-full .wpforms-form button[type="submit"].wpforms-submit {
   background: none;
   border: none;
   text-align: center;
+}
+
+/**
+ CUSTOM BOX SHADOW IMAGE
+*/
+
+img[src*="recadrage-1"] {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) !important;
 }

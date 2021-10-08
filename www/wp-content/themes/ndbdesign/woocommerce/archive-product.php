@@ -26,6 +26,7 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 do_action( 'woocommerce_before_main_content' );
 
 ?>
@@ -100,6 +101,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' );
+//do_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );
