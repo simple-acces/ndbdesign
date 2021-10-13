@@ -1,4 +1,12 @@
 switch (location.pathname) {
+  case "/temoignages/":
+    const titles = document.querySelectorAll("h3.author-name");
+    titles.forEach((title) =>
+      title.parentElement.parentElement
+        .querySelector(".item-content-wrapper.tss-right")
+        .prepend(title)
+    );
+
   default:
     const slides = document.querySelectorAll(".slide");
     slides.forEach((slide) =>

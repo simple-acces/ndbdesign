@@ -524,7 +524,7 @@ header#masthead {
 
 .site-logo > div {
   font-family: "Capsuula";
-  font-size: 16px;
+  font-size: 17px;
   margin-top: -1px;
   margin-left: 12px;
   text-align: left;
@@ -767,6 +767,11 @@ body.home > #page > #content > article:nth-child(10) p {
   text-align: center;
 }
 
+body.woocommerce-shop ul.products li.product {
+  box-shadow: 5px 5px 10px #a4b5af57;
+  min-height: 364px;
+}
+
 .woocommerce ul.products li.product a img {
   margin: auto;
 }
@@ -777,6 +782,11 @@ body.home > #page > #content > article:nth-child(10) p {
   padding: 1em 0 0.4em 0;
   line-height: 1.3em;
   font-size: 15px;
+}
+
+body.home .woocommerce ul.products li.product .woocommerce-loop-product__title {
+  max-width: 300px;
+  margin: auto;
 }
 
 .woocommerce ul.products li.product .price {
@@ -969,7 +979,7 @@ body.woocommerce-shop #main {
 }
 
 .slider-grid .element {
-  width: fit-content;
+  width: 40%;
 }
 
 .slider-grid .element h3 {
@@ -1109,6 +1119,59 @@ div.wpforms-container-full .wpforms-form button[type="submit"].wpforms-submit {
   background: none;
   border: none;
   text-align: center;
+}
+
+/**
+  PAGE TEMOIGNAGE
+**/
+
+.rt-container-fluid.tss-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.rt-container-fluid.tss-wrapper h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Capsuula";
+  margin: 0;
+}
+
+.tss-wrapper .tss-layout1 .tss-meta-info.tss-left {
+  flex: 1;
+}
+
+.tss-wrapper .tss-layout1 .item-content-wrapper {
+  padding: 10px 20px;
+}
+
+.tss-wrapper .tss-layout1 .item-content-wrapper:after {
+  display: none;
+}
+
+/**
+  PAGE CGV
+**/
+
+.cgv {
+  padding-bottom: 100px;
+}
+
+.cgv p {
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+.cgv h2 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 24px;
+  font-family: "Capsuula";
+  margin: 50px auto 20px auto;
+  max-width: 1200px;
 }
 
 /**
