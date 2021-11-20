@@ -717,6 +717,11 @@ body:not(.home) .grid.realisations {
   grid-template-rows: auto;
 }
 
+body.page-id-95 #content > p,
+body.page-id-143 #content > p {
+  max-width: 1270px;
+}
+
 /*******
 
 	LUMINAIRES
@@ -784,7 +789,12 @@ body.woocommerce-shop ul.products li.product {
   font-size: 15px;
 }
 
-body.home .woocommerce ul.products li.product .woocommerce-loop-product__title {
+body.home .woocommerce ul.products li.product .woocommerce-loop-product__title,
+body.page-id-935
+  .woocommerce
+  ul.products
+  li.product
+  .woocommerce-loop-product__title {
   max-width: 300px;
   margin: auto;
 }
@@ -813,6 +823,11 @@ body.home
   .woocommerce
   ul.products
   li.product
+  h2.woocommerce-loop-category__title,
+body.page-id-935
+  .woocommerce
+  ul.products
+  li.product
   h2.woocommerce-loop-category__title {
   font-size: 16px;
   color: #7a726c;
@@ -820,7 +835,8 @@ body.home
   margin-top: 20px;
 }
 
-body.home .woocommerce-loop-category__title .count {
+body.home .woocommerce-loop-category__title .count,
+body.page-id-935 .woocommerce-loop-category__title .count {
   display: none;
 }
 
@@ -980,6 +996,10 @@ body.woocommerce-shop #main {
 
 .slider-grid .element {
   width: 40%;
+}
+
+.slider-grid .element:only-child {
+  width: 100%;
 }
 
 .slider-grid .element h3 {
@@ -1180,4 +1200,11 @@ div.wpforms-container-full .wpforms-form button[type="submit"].wpforms-submit {
 
 img[src*="recadrage-1"] {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) !important;
+}
+
+/**
+  CUSTOM TOOL
+**/
+.spacer-v {
+  height: 50px;
 }

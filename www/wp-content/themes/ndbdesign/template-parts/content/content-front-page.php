@@ -32,7 +32,7 @@ foreach( $pages as $page ) {
 
     <?php 
 	if ($page->ID == 95 || $page->ID == 143) {
-		get_template_part('pages/realisations');
+		get_template_part('pages/realisations', null, ['page' => $page->ID]);
 	} else {
 		the_content();
 	}		

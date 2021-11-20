@@ -43,6 +43,7 @@ while ( have_posts() ) :
 		array(
 			'next_text' => '<button class="meta-nav">' . $twentytwentyone_next_label . $twentytwentyone_next . '</button>',
 			'prev_text' => '<button class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '</button>',
+			'in_same_term'               => true,
 		)
 	);
 endwhile; // End of the loop.
