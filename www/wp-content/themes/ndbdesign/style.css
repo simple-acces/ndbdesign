@@ -575,7 +575,10 @@ header#masthead {
 .primary-menu-container li.menu-item-has-children ul.sub-menu li {
   padding: 15px 10px 10px 10px;
   background: white;
-  border-radius: 5px;
+}
+
+.primary-menu-container li.menu-item-has-children ul.sub-menu li:last-child {
+  border-radius: 0 0 5px 5px;
 }
 
 /*******
