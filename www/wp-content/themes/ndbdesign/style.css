@@ -524,7 +524,7 @@ header#masthead {
   width: 100%;
 }
 
-.site-logo > a {
+.site-logo > a:not(.custom-logo-link) {
   font-family: "Capsuula";
   font-size: 17px;
   margin-top: -1px;
