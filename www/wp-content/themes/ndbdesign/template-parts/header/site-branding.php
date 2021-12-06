@@ -7,10 +7,10 @@
 <?php if ( has_custom_logo() ) : ?>
 	<div class="site-logo">
 		<?php the_custom_logo(); ?>
-		<div>
+		<a href="<?php echo home_url() ?>" target="_self"><div>
 			NDB Design<br/>
 			Architecture d'intérieur & design à vivre <br/>
 			Paris
-		</div>
+		</div></a>
 	</div>
 <?php endif; ?>

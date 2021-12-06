@@ -432,22 +432,24 @@ h1 {
   max-width: 100%;
 }
 
-.seeall {
-  width: 200px;
-  height: 45px;
-  margin: 50px auto;
-  display: block;
-}
-
-.seeall button {
+.seeall button,
+button.seeall {
   width: 100%;
   height: 100%;
-  background: #a4b5af;
+  background-color: #a4b5af !important;
   color: white;
   border: none;
   font-size: 16px;
   font-weight: 300;
   cursor: pointer;
+}
+
+.seeall,
+button.seeall {
+  width: 200px;
+  height: 45px;
+  margin: 50px auto;
+  display: block;
 }
 
 .seeall button:hover {
@@ -522,12 +524,18 @@ header#masthead {
   width: 100%;
 }
 
-.site-logo > div {
+.site-logo > a {
   font-family: "Capsuula";
   font-size: 17px;
   margin-top: -1px;
   margin-left: 12px;
   text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-logo > a:hover {
+  color: inherit;
 }
 
 .menu-button-container {
@@ -1196,6 +1204,138 @@ div.wpforms-container-full .wpforms-form button[type="submit"].wpforms-submit {
   font-family: "Capsuula";
   margin: 50px auto 20px auto;
   max-width: 1200px;
+}
+
+/**
+ PAGE PRODUIT WOOCOMERCE
+*/
+.woocommerce div.product p.price {
+  text-align: center;
+  color: inherit;
+  font-size: 18px;
+}
+
+.woocommerce div.product .product_title {
+  margin-bottom: 10px;
+}
+
+.woocommerce div.product div.images img {
+  /*max-height: 600px;
+  width: auto !important;*/
+}
+
+.woocommerce div.product form.cart .variations label {
+  font-family: "Capsuula";
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.woocommerce div.product form.cart .variations select {
+  font-size: 16px;
+  color: #7a726c;
+}
+
+.woocommerce-variation-add-to-cart.variations_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.woocommerce-product-details__short-description {
+  margin: 60px 0;
+}
+
+.single-product #content {
+  margin-top: 50px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  padding: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  border-bottom: 1px solid #7a726c;
+  background: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li h3 {
+  font-family: "Capsuula";
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+  color: inherit;
+  padding: 3px 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+  border-bottom: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+  display: none;
+}
+
+.related.products > h2 {
+  font-family: "Capsuula";
+  font-size: 30px;
+  font-weight: 300;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.woocommerce div.product .woocommerce-tabs.wc-tabs-wrapper {
+  position: relative;
+  padding: 50px 0;
+}
+
+.woocommerce div.product .woocommerce-tabs.wc-tabs-wrapper::before {
+  content: " ";
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: calc((1300px - 100vw) / 2);
+  z-index: -1;
+  display: block;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+  margin: 0;
+}
+
+.wpgs-nav .slick-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  overflow: hidden;
+}
+
+.wpgs-nav .slick-arrow,
+.wpgs-nav .slick-arrow::before,
+.wpgs-nav .slick-arrow::after {
+  display: none;
+}
+
+.wpgs-for .slick-arrow {
+  margin: -15px -30px;
+}
+
+.woocommerce div.product div.images img {
+  width: 100% !important;
+  height: auto !important;
 }
 
 /**

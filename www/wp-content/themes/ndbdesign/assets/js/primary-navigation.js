@@ -176,7 +176,7 @@ function twentytwentyoneExpandSubMenu(el) {
      * Close menu and scroll to anchor when an anchor link is clicked.
      * Adapted from TwentyTwenty.
      */
-    document.addEventListener("click", function (event) {
+    /*document.addEventListener("click", function (event) {
       // If target onclick is <a> with # within the href attribute
       if (event.target.hash && event.target.hash.includes("#")) {
         wrapper.classList.remove(id + "-navigation-open", "lock-scrolling");
@@ -187,7 +187,7 @@ function twentytwentyoneExpandSubMenu(el) {
           anchor.scrollIntoView();
         }, 550);
       }
-    });
+    });*/
 
     /*document.getElementById( 'site-navigation' ).querySelectorAll( '.menu-wrapper > .menu-item-has-children' ).forEach( function( li ) {
 			li.addEventListener( 'mouseenter', function() {
