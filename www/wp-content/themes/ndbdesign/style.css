@@ -865,6 +865,52 @@ body.woocommerce-shop #main {
   background: #a4b5af94;
 }
 
+.woocommerce-cart table.cart .product-thumbnail img {
+  max-width: 64px !important;
+}
+
+.woocommerce table.shop_table {
+  margin-top: 10px;
+}
+
+.woocommerce a.remove {
+  font-weight: 300;
+  font-size: 2em;
+  color: #7a726c !important;
+}
+
+.woocommerce th.product-remove {
+  width: 20px;
+}
+
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+  float: none;
+}
+
+.woocommerce-message {
+  border-top-color: #a4b5af;
+}
+
+.woocommerce-message::before {
+  color: #a4b5af;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #a4b5af;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  opacity: 0.8;
+  background-color: #a4b5af;
+}
+
 /*******
 
 	PAGE PRESATION (BESOIN/SOLUTION)
