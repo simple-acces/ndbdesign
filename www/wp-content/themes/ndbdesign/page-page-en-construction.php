@@ -8,7 +8,14 @@ get_header();
         <div class="image">
         <?php if ( has_post_thumbnail() ) :
 			the_post_thumbnail( 'full' );
-		endif; ?>
+        else:
+         ?>   
+            <div class="image">
+               <img alt="image accueil" style="max-width:100%" src="/wp-content/themes/ndbdesign/assets/images/home.jpeg" />
+            </div>
+         <?php
+		   endif; 
+         ?>
         </div>
         <br/><br/>
    </div>
