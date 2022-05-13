@@ -410,6 +410,7 @@ h1 {
 
 .site-content > article {
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .content-area {
@@ -426,6 +427,14 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-template-rows: repeat(1, 400px);
+}
+
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, 450px);
+  }
 }
 
 .grid .element img {
@@ -450,6 +459,13 @@ button.seeall {
   height: 45px;
   margin: 50px auto;
   display: block;
+}
+
+@media (max-width: 800px) {
+  .seeall,
+  button.seeall {
+    margin: 30px auto;
+  }
 }
 
 .seeall button:hover {
@@ -565,6 +581,53 @@ header#masthead {
   align-items: center;
 }
 
+#masthead #menu-bt-open,
+#masthead #menu-bt-close {
+  display: none;
+  width: 20px;
+  fill: #7a726c;
+}
+
+#masthead .site-navigation-mobile {
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  background: white;
+}
+
+@media (max-width: 800px) {
+  #site-navigation {
+    display: none;
+  }
+
+  #masthead .content-area {
+    justify-content: space-evenly;
+  }
+
+  #masthead #menu-bt-open {
+    display: block;
+  }
+
+  .site-navigation-mobile .primary-menu-container ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
+  }
+
+  .site-navigation-mobile .primary-menu-container li {
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgb(0 0 0 / 10%);
+  }
+}
+
 .primary-menu-container ul.sub-menu {
   display: none;
   position: absolute;
@@ -620,13 +683,36 @@ header#masthead {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .home-description .content-area {
+    flex-direction: column;
+  }
+  .home-description .content-area > div {
+    width: 90%;
+    padding: 5%;
+  }
+}
+
 /*******
 
 	NOS PRESATIONS
 
 *****/
 
-body.home > #page > #content > article:nth-child(3) {
+@media (max-width: 800px) {
+  .woocommerce ul.products[class*="columns-"] li.product,
+  .woocommerce-page ul.products[class*="columns-"] li.product {
+    width: 40%;
+    float: left;
+    clear: both;
+    margin: 0 5% 2.992em;
+  }
+
+  .woocommerce ul.products[class*="columns-"] li.product:nth-child(2n),
+  .woocommerce-page ul.products[class*="columns-"] li.product:nth-child(2n) {
+    float: left;
+    clear: none !important;
+  }
 }
 
 /*******
@@ -661,6 +747,17 @@ body.home > #page > #content > article:nth-child(4) {
 
 .slide {
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .slide {
+    max-width: 80%;
+    background: white;
+    border-radius: 40px;
+    padding: 20px 20px;
+    margin: 20px auto;
+    font-size: 16px;
+  }
 }
 
 /*******
@@ -769,6 +866,16 @@ body.home > #page > #content > article:nth-child(10) p {
   margin: auto;
 }
 
+@media (max-width: 800px) {
+  body.home > #page > #content > article:nth-child(10) p {
+    flex-direction: column;
+  }
+
+  body.home > #page > #content > article:nth-child(10) p img {
+    margin-bottom: 5%;
+  }
+}
+
 /*******
 
 	WOOCOMMERCE
@@ -829,6 +936,12 @@ body.page-id-935
 
 .woocommerce.columns-4 ul.products li.product {
   margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .woocommerce.columns-4 ul.products li.product:nth-child(2) {
+    margin-bottom: 10%;
+  }
 }
 
 body.home
@@ -976,6 +1089,29 @@ body.woocommerce-shop #main {
 
 .site-footer .socials i {
   margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .site-footer {
+    height: 90px;
+    justify-content: space-evenly;
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer .footer-navigation {
+    display: none;
+  }
+
+  .site-footer .site-info {
+    width: 80%;
+    text-align: center;
+  }
+
+  .site-footer .socials {
+    text-align: center;
+  }
 }
 
 /**

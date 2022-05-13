@@ -397,7 +397,7 @@ function twenty_twenty_one_scripts() {
 	// Note, the is_IE global variable is defined by WordPress and is used
 	// to detect if the current browser is internet explorer.
 	global $is_IE, $wp_scripts;
-	wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array(), "6.0.6" );
+	wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array(), "6.0.7" );
 
 	// Register the IE11 polyfill file.
 	wp_register_script(
@@ -441,7 +441,7 @@ function twenty_twenty_one_scripts() {
 		'main',
 		get_template_directory_uri() . '/assets/js/main.js',
 		array( 'twenty-twenty-one-ie11-polyfills' ),
-		wp_get_theme()->get( 'Version' ),
+		'6.0.7',
 		true
 	);
 
