@@ -24,6 +24,7 @@ switch (location.pathname) {
         a.style.color = "#a3b4ae";
         sub.style.display = "block";
       });
+      a.addEventListener("click", (e) => e.preventDefault());
       sub.addEventListener("mouseleave", () => {
         a.style.color = "inherit";
         sub.style.display = "none";
