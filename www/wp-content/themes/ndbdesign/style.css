@@ -518,6 +518,11 @@ body:not(.home) #content > .grey {
   color: #8da39f;
 }
 
+p img:only-child {
+  display: block;
+  margin: auto;
+}
+
 /*******
 
 	HEADER
@@ -549,13 +554,13 @@ header#masthead {
 }
 
 .site-logo img {
-  height: 100%;
-  width: 100%;
+  height: 110%;
+  width: 110%;
 }
 
 .site-logo > a:not(.custom-logo-link) {
   font-family: "Capsuula";
-  font-size: 17px;
+  font-size: 19px;
   margin-top: -1px;
   margin-left: 12px;
   text-align: left;
@@ -854,9 +859,11 @@ body:not(.home) .grid.realisations {
   grid-template-rows: auto;
 }
 
-body.page-id-95 #content > p,
-body.page-id-143 #content > p {
+body.page-id-95 #content p,
+body.page-id-143 #content p {
   max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*******
@@ -904,6 +911,15 @@ body.home > #page > #content > article:nth-child(10) p {
   }
 }
 
+/******
+
+  TESTIMONIAL
+
+****/
+
+.tss-wrapper .tss-carousel1 .item-content-wrapper .item-content {
+  font-size: 18px;
+}
 /*******
 
 	WOOCOMMERCE
@@ -964,6 +980,19 @@ body.page-id-935
 
 .woocommerce.columns-4 ul.products li.product {
   margin-bottom: 0;
+}
+
+body.home .woocommerce.columns-3 ul.products li.product {
+  width: 22.05%;
+}
+
+body.home .woocommerce.columns-3 ul.products {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body.home .woocommerce ul.products li.product a img {
+  border: 1px solid #e6e6e6;
 }
 
 @media (max-width: 800px) {

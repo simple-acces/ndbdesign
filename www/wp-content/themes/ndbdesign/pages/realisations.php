@@ -12,10 +12,8 @@ $posts = get_posts(array(
 if (!is_front_page()) {
     get_header();
     the_title("<h1>", "</h1>");
-    the_content();
 }
 ?>
-<div class="<?php is_front_page() ? print '' : print 'grey' ?>">
 <div class="grid realisations">
     <?php
     if ( $posts ) {
@@ -38,6 +36,13 @@ if (!is_front_page()) {
     }
     ?>
 </div>
+<div class="<?php is_front_page() ? print '' : print 'grey' ?>">
+<?php
+if (!is_front_page()) {
+    echo '<br />';
+    the_content();
+}
+?>
 </div>
 <?php if (is_front_page()): 
     if($pageId == 95):
