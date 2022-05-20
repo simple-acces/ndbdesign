@@ -982,11 +982,11 @@ body.page-id-935
   margin-bottom: 0;
 }
 
-body.home .woocommerce.columns-3 ul.products li.product {
+body.home article:nth-child(8) .woocommerce.columns-3 ul.products li.product {
   width: 22.05%;
 }
 
-body.home .woocommerce.columns-3 ul.products {
+body.home article:nth-child(8) .woocommerce.columns-3 ul.products {
   display: flex;
   justify-content: space-evenly;
 }
