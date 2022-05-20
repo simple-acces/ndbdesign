@@ -501,7 +501,7 @@ body:not(.home) #content > p {
 }
 
 body:not(.home) #content > .grey {
-  padding: 1px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
 }
 
 .site-content {
