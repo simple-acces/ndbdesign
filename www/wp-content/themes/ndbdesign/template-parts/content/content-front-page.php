@@ -6,7 +6,7 @@
     </div>
 </article>
 
-<article class="bg-secondary home-description">
+<article class="home-description">
     <div class="content-area">
         <div class="image">
             <img alt="image accueil" src="/wp-content/themes/ndbdesign/assets/images/home_1.jpg" />
@@ -27,7 +27,17 @@ $pages = get_pages(array(
 foreach( $pages as $page ) { 
 	setup_postdata( $page );     
 ?>
-<article>
+<?php 
+if ($page->ID == 29) {
+
+    ?><article class='bg-secondary'><?php 
+
+} else {
+    
+    ?><article><?php 
+
+}		
+?>
     <h1><?php echo $page->post_title ?></h1>
 
     <?php 
