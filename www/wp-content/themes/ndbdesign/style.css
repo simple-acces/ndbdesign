@@ -434,7 +434,7 @@ h1 {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(1, 400px);
+    grid-template-rows: repeat(3, 450px);
   }
   .content-area {
     width: 100%;
