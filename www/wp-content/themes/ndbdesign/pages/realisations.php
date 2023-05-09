@@ -36,7 +36,7 @@ if (!is_front_page()) {
     }
     ?>
 </div>
-<div class="<?php is_front_page() ? print '' : print 'grey' ?>">
+<div class="<?php is_front_page() || $pageId == 143 ? print '' : print 'grey' ?>">
 <?php
 if (!is_front_page()) {
     echo '<br />';
