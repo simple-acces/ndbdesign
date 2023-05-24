@@ -850,6 +850,11 @@ body.home a.testimonial button {
   .tss-wrapper .single-item-wrapper {
     flex-direction: column;
   }
+  .rt-col-xs-12,
+  .rt-col-sm-12,
+  .rt-col-md-12 {
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
