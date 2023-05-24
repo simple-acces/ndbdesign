@@ -695,6 +695,10 @@ header#masthead {
 
 *****/
 
+article.home-description {
+  padding-top: 0;
+}
+
 .home-description .content-area {
   display: flex;
   justify-content: space-evenly;
@@ -725,9 +729,14 @@ header#masthead {
   .home-description .content-area {
     flex-direction: column;
   }
-  .home-description .content-area > div {
+
+  .home-description .content-area > div.description {
     width: 90%;
-    padding: 5%;
+    padding: 0 5%;
+  }
+  .home-description .content-area > div.image {
+    width: 100%;
+    padding: 0;
   }
 }
 
