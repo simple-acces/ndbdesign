@@ -846,6 +846,17 @@ body.home a.testimonial button {
   width: 100%;
 }
 
+@media (max-width: 1210px) {
+  .tss-wrapper .single-item-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .rt-col-sm-6 {
+    width: 100%;
+  }
+}
 /*******
 
 	REALISATIONS
